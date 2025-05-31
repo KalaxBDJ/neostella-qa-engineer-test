@@ -17,6 +17,10 @@ jobs:
       run: npm ci
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Set up environment variables from Github Action secrets
+      run: |
+        echo "AUTOMATION_CHALLANGE_EMAIL=${{ secrets.AUTOMATION_CHALLANGE_EMAIL }}" >> $GITHUB_ENV
+        echo "AUTOMATION_CHALLANGE_PASSWORD=${{ secrets.AUTOMATION_CHALLANGE_PASSWORD }}" >> $GITHUB_ENV
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4
