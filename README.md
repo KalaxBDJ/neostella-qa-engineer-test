@@ -13,7 +13,7 @@ This repository contains automated tests for [theautomationchallenge.com](https:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/neostella-qa-engineer-test.git
+    git clone https://github.com/KalaxBDJ/neostella-qa-engineer-test.git
     cd neostella-qa-engineer-test
     ```
 
